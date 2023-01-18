@@ -1,0 +1,108 @@
+.modal {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100;
+    background: white;
+    border-radius: 10px;
+   min-width: 50%;
+   min-height:40%;
+    top: 30vh;
+    left: 25%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    padding: 2rem;
+  }
+  .modal > input{
+    
+    min-width: 70%;
+    height: 30px;
+  }
+
+  .modal > label{
+    font-size: 1rem;
+    color: black;
+  }
+
+  
+  .btns{
+    display: flex;
+  }
+  .modal .modal__title {
+    margin: 0;
+    padding: 1rem;
+    border-bottom: 1px solid #00329E;
+    background: #00329E;
+    color: white;
+    border-radius: 10px 10px 0 0;
+  }
+  .modal .modal__content {
+    padding: 1rem;
+  }
+  .modal .modal__actions {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .movie-element {
+    background-color: #ed7f0174;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+    display: flex;
+  }
+  
+  
+  .movie-element h2,
+  .movie-element p {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+  .movie-element h2 {
+    color: #f0d62a;
+    margin-bottom: 1rem;
+  }
+  .movie-element p {
+    color: white;
+    display: inline;
+    background: #F67722;
+    padding: 0.25rem 1rem;
+    border-radius: 15px;
+  }
+  .movie-element__image {
+    flex: 1;
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+  }
+  .movie-element__image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .movie-element__info {
+    flex: 2;
+    padding: 1rem;
+  }
+  .modal.visible {
+    display: block;
+    animation: fade-slide-in 0.5 s ease-out forwards;
+  }
+
+  @media (min-width: 768px) {
+    .modal {  
+      width: 40rem;
+      left: calc(50% - 23rem); 
+    }
+  }
+  @keyframes fade-slide-in {
+    50% {
+      transform: translateY(-30rem);
+  
+    }
+    100% {
+  
+      transform: translateZ(0);
+    }
+     }
+
+    

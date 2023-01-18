@@ -1,0 +1,20 @@
+.modal-delete{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100;
+    background: white;
+    border-radius: 10px;
+   min-width: 50%;
+   min-height:40%;
+    top: 30vh;
+    left: 25%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.delete-btn{
+    display: flex;
+}
